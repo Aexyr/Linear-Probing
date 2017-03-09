@@ -1,10 +1,11 @@
 /*
 	Fazeli, Bijan
+	Lauguico, Marco
 
 	CS A200
-	March 2, 2017
+	March 9, 2017 (4:03 AM)
 
-	Lab 5
+	Lab 5.5
 */
 
 #include "HashTable.h"
@@ -91,7 +92,7 @@ void HashTable::insert(int key)
 	}
 	else
 	{
-		while (table[hash] != -1 || table[hash] != -2)
+		while (table[hash] != -1 || table[hash] != -2) //Yo Bijan!
 		{
 			hash = (hash == (capacity - 1)) ? 0 : hash + 1;
 		}
@@ -166,7 +167,7 @@ HashTable& HashTable::operator=(const HashTable & rightSide)
 			table = new int[rightSide.capacity];
 			capacity = rightSide.capacity;
 		}
-		for (int i = 0; i < rightSide.numOfElements; ++i)
+		for (int i = 0; i < rightSide.numOfElements; ++i) //Yo Bijan!
 		{
 			table[i] = rightSide.table[i];
 		}
